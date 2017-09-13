@@ -1,0 +1,5 @@
+type,decs
+Background,trackbackgroundspr.csv
+JudgeLine,trackjudgeline.csv
+Explosion,explosionspr.csv
+FailEffect,failjudgespr.csv
