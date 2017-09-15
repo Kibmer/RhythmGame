@@ -34,6 +34,12 @@
     <Filter Include="소스 파일\Scene\TitleScene">
       <UniqueIdentifier>{ac052292-cf78-45d5-84f2-898f11d6bb33}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Scene\LogoScene">
+      <UniqueIdentifier>{bdd5ed2e-2c71-425d-8035-ccfff947bb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\ResultScene">
+      <UniqueIdentifier>{5678d1c9-8bfa-48b5-b47e-eb9c6bb6a028}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -74,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="SceneManager.cpp">
       <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>소스 파일\Scene\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoScene.cpp">
+      <Filter>소스 파일\Scene\LogoScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +130,12 @@
     </ClInclude>
     <ClInclude Include="SceneManager.h">
       <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>소스 파일\Scene\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoScene.h">
+      <Filter>소스 파일\Scene\LogoScene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

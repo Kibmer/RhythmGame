@@ -8,8 +8,9 @@
 #include "GameSystem.h"
 #include "Sprite.h"
 #include "Track.h"
-#include "GameScene.h"
 #include "Font.h"
+#include "SceneManager.h"
+#include "GameScene.h"
 
 
 GameScene::GameScene()
@@ -143,6 +144,7 @@ void GameScene::Deinit()
 		delete _textFont;
 		_textFont = NULL;
 	}
+
 }
 
 void GameScene::Update(int deltaTime)
@@ -156,7 +158,9 @@ void GameScene::Update(int deltaTime)
 	}
 	else
 	{
-		GameSystem::GetInstance().Quit();
+		//GameSystem::GetInstance().Quit();
+		Mix_PauseMusic();
+		SceneManager::GetInstance().ChangeScene(eScene::SCENE_RESULT);
 	}
 }
 

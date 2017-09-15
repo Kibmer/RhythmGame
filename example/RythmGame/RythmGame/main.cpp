@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 
 	SDL_SetRenderDrawColor(sdlRenderer, 0, 0, 0, 255);
 
-	SceneManager::GetInstance().ChangeScene("GameScene");
+	SceneManager::GetInstance().ChangeScene(eScene::SCENE_LOGO);
 
 	int frame = 0;
 	int oldFrame = 0;

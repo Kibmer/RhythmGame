@@ -2,6 +2,8 @@
 
 #include "Scene.h"
 
+class Sprite;
+
 class TitleScene : public Scene
 {
 public:
@@ -12,4 +14,11 @@ public:
 	void Deinit();
 	void Update(int deltaTime);
 	void Render();
+
+
+private:
+	Sprite* _backgroundSprite;
+
+public:
+	void KeyUp(int keyCode);
 };

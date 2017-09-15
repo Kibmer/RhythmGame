@@ -1,5 +1,12 @@
 #pragma once
 
+enum eScene {
+	SCENE_LOGO,
+	SCENE_TITLE,
+	SCENE_GAME,
+	SCENE_RESULT
+};
+
 class Scene;
 
 class SceneManager
@@ -21,7 +28,7 @@ private:
 	Scene* _scene;
 
 public:
-	void ChangeScene(const char* sceneName);
+	void ChangeScene(eScene scene);
 	void Update(int deltaTime);
 	void Render();
 	void KeyDown(int keyCode);
